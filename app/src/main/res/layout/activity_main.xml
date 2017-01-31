@@ -20,70 +20,52 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/TeamNameTextStyle"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Team A"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                android:text="@string/team_a_name" />
 
             <TextView
                 android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/TeamScoreTextStyle"
                 android:layout_margin="@dimen/activity_vertical_margin"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                android:fontFamily="sans-serif-light" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_margin="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onTakedownForTeamA"
-                android:text="Takedown" />
+                android:text="@string/action_takedown" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_marginLeft="@dimen/button_margin"
                 android:layout_marginRight="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onEscapeForTeamA"
-                android:text="Escape" />
+                android:text="@string/action_escape" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_margin="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onReversalForTeamA"
-                android:text="Reversal" />
+                android:text="@string/action_reversal" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_marginLeft="@dimen/button_margin"
                 android:layout_marginRight="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onNearFallForTeamA"
-                android:text="NearFall" />
+                android:text="@string/action_nearfall" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_margin="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onPenaltyForTeamA"
-                android:text="Penalty" />
+                android:text="@string/action_penalty" />
 
         </LinearLayout>
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="@dimen/separation_line_width"
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
@@ -96,65 +78,47 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/TeamNameTextStyle"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Team B"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                android:text="@string/team_b_name" />
 
             <TextView
                 android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/TeamScoreTextStyle"
                 android:layout_margin="@dimen/activity_vertical_margin"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                android:fontFamily="sans-serif-light" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_margin="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onTakedownForTeamB"
-                android:text="Takedown" />
+                android:text="@string/action_takedown" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_marginLeft="@dimen/button_margin"
                 android:layout_marginRight="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onEscapeForTeamB"
-                android:text="Escape" />
+                android:text="@string/action_escape" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_margin="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onReversalForTeamB"
-                android:text="Reversal" />
+                android:text="@string/action_reversal" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_marginLeft="@dimen/button_margin"
                 android:layout_marginRight="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onNearFallForTeamB"
-                android:text="NearFall" />
+                android:text="@string/action_nearfall" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_margin="@dimen/button_margin"
-                android:gravity="center"
                 android:onClick="onPenaltyForTeamB"
-                android:text="Penalty" />
+                android:text="@string/action_penalty" />
 
         </LinearLayout>
 
@@ -167,6 +131,6 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/button_margin"
         android:onClick="onReset"
-        android:text="Reset" />
+        android:text="@string/action_reset" />
 
 </RelativeLayout>
